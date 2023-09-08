@@ -6,20 +6,22 @@ int main()
     printf("enter the number is :\n ");
     scanf("%d",&n);
 
+    printf("even number is \n");
     while(i<n)
     {
         if(i%2==0)
         {
-            printf("%d is even\n",i);
+            printf("%d\t",i);
         }
         i++;
     }
-    i=0;
+    printf("\nodd number is \n");
+    i=1;
     while(i<n)
     {
         if(i%2!=0)
         {
-            printf("%d is odd\n",i);
+            printf("%d\t",i);
         }
         i++;
     }
