@@ -1,3 +1,8 @@
+// 1 
+// 4 9 
+// 16 25 36
+// 49 64 81 100
+
 #include<stdio.h>
 int main()
 {
@@ -6,13 +11,8 @@ int main()
     {
         for(j=1;j<=i;j++)
         {
-            
-            // if(j<=i)
-            // {
-                
                 printf("%d ",k*k);
                 k++;
-            // }
         }
         printf("\n");
     }

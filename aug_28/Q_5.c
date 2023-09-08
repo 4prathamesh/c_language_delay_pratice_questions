@@ -1,28 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int no,i,temp,count,sum,temp2,mul,rem,p;
+    int no,i,temp,count,sum,mul,rem,p;
 
     printf("enter the number");
     scanf("%d",&no);
 
-    for(i=10;i<=no;i++)
+    for(i=1;i<=no;i++)
     {
         temp=i;
-        
         count=0;
+        // how many digit are present in the number
         for(;temp>0;)
         {
             temp=temp/10;
             count++;
         }
-        //printf("%d ",count);
         sum=0;
-        temp2=i;
-        for(;temp2>0;)
+        temp=i;
+        for(;temp>0;)
         {
             mul=1;
-            rem=temp2%10;
+            rem=temp%10;
             p=1;
             while(p<=count)
             {
@@ -30,7 +29,7 @@ int main()
                 p++;
             }
             sum=sum+mul;
-            temp2=temp2/10;
+            temp=temp/10;
         }
         if(i==sum)
         {

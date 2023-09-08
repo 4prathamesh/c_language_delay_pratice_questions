@@ -1,3 +1,9 @@
+// 1 2 3 4 5 
+// A B C D  
+// 6 7 8
+// E F
+// 9
+
 #include<stdio.h>
 int main()
 {

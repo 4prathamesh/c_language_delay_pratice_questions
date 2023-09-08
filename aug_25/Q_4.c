@@ -9,10 +9,7 @@ int main()
     {
         rem=number%10;
         number=number/10;
-        //if(rem!=0)
-       // {
             sum=sum+rem;
-        //}
     }
     printf("%d",sum);
     return 0;
