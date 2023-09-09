@@ -4,7 +4,7 @@ int main()
     int i,no,a[5],index,size=5,ele;
 
     printf("enter the array element:\n");
-    for(i=0;i<5;i++)
+    for(i=0;i<4;i++)
     {
         scanf("%d",&a[i]);
     }
@@ -12,12 +12,12 @@ int main()
     printf("enter the index and element \n");
     scanf("%d%d",&index,&ele);
 
-    for(i=4;i<=index;i--)
+    for(i=3;i>=index;i--)
     {
         a[i+1]=a[i];
 
     }
-    size++;
+    //size++;
 
     a[index]=ele;
 
