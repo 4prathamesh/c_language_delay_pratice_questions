@@ -17,7 +17,6 @@ int main()
         a[i+1]=a[i];
 
     }
-    //size++;
 
     a[index]=ele;
 
