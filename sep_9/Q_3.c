@@ -1,7 +1,9 @@
+// write c program to array is palindrome or not .
+
 #include<stdio.h>
 int main()
 {
-    int i,j,a[10];
+    int i,j,a[10],size;
 
     printf("enter the size of array :\n");
     scanf("%d",&size);
@@ -12,10 +14,26 @@ int main()
         scanf("%d",&a[i]);
     }
 
-    int size;
-    for(i=0;i<size-1;i++)
+    int mid=size/2;
+    int end=size-1;
+    int count=0;
+   
+    for(i=0;i<mid;i++)
     {
-        for(j=0)
+        if(a[i]==a[end])
+        {
+            count++;
+        }
+        end--;
     }
+
+    if(count>=mid)
+    {
+        printf("array is palindrome: ");
+    }
+    else{
+        printf("array is not palindrome: ");
+    }
+
 
 }
