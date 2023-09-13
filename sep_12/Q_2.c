@@ -27,7 +27,7 @@ int main()
     {
         for(j=0;j<3;j++)
         {
-            printf("%d ",c[i][j]=a[i][j]+b[i][j]);
+            printf("%d ",c[i][j]=a[i][j]+a[i][j]);
         }
         printf("\n");
     }
