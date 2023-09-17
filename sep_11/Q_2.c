@@ -4,7 +4,7 @@
 #include<stdio.h>
 int main()
 {
-    int i,a[10],size;
+    int i,a[10],size,no,max,j;
     printf("enter the size of array \n");
     scanf("%d",&size);
 
@@ -14,14 +14,23 @@ int main()
         scanf("%d",&a[i]);
     }
 
-    for(i=0;i<size-1;i++)
+    for(i=0;i<size;i++)
     {
-        if(a[i]<a[i+1])
+        max=a[i];
+        for(j=i+1;j<size;j++)  //  5 3 10 9 6 13
         {
-            printf(" %d ",a[i+1]);
+            if(a[j]>max)
+            {
+                max=a[j];
+                break;
+            }
+            
         }
-        else{
-            printf(" -1 ");
+        if(max==a[i])
+        {
+            max=-1;
         }
+        printf("%d ",max);
     }
+    return 0;
 }
