@@ -41,6 +41,10 @@ int main()
         {
             printf("is armstrong =%d\n",p[i]);
         }
+        else
+        {
+            printf("is not armstrong");
+        }
     }
     
     return 0;
