@@ -1,4 +1,4 @@
-// find max and min number in array using recurtion?????
+// find max and min number in array using recurtion
 #include<stdio.h>
 int i=0,j=1,mx=0;
 void max(int a[])
@@ -26,7 +26,7 @@ void min(int b[], int mn)
     {
         if(b[j]<mn)
         {
-            mn=b[i];
+            mn=b[j];
             j++;
             min(b,mn);
         }
