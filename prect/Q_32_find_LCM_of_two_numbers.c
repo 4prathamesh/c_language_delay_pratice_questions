@@ -1,6 +1,5 @@
 // 32.Write a C program to find LCM of two numbers.
 #include<stdio.h>
-// int p;
 void lcm(int no1,int no2,int i,int p)
 {
     if(i%no1==0 && i%no2==0)
