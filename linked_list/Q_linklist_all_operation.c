@@ -97,7 +97,7 @@ void end()
             else{
                 temp->next=temp1;
                 temp1->next=NULL;
-                temp=NULL;
+                temp=NULL;  //loop la khatm karyla lavlele dhokhe
             }
         }
     }
