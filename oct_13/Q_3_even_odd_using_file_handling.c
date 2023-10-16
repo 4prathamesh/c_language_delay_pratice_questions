@@ -11,22 +11,20 @@ int main()
     printf("file is created\n");
 
     int ch;
-    while( (ch=fgetc(fptr) )!=EOF )
-    {
+    while( (ch=fgetc(fptr) )!=EOF ) // check the file is emt or not 
+    {                               // file is not emt than loop is execute
         if(ch>='0'&&ch<='9'){
-        if(ch%2==0)
+        if(ch%2==0)             // even logic
         {
-            fputc(ch,fptr1);
+            fputc(ch,fptr1);      // ch madhala data fptr1 madhly file madhe jael
         }
-        else{
+        else{                      // odd 
             fputc(ch,fptr2);
         }
         
         int a=ch-48,i=1,count=0;
-        //printf("%d ",a);
-        while(i<=a)
+        while(i<=a)           //  prime loop 
         {
-              //printf("%d  %d\n",a,i);
             if(a%i==0)
             {
                 count++;
@@ -35,9 +33,8 @@ int main()
         }
         if(count==2)
         {
-              //printf("----> %d\n",a);
             //fputc(a,f);
-             fprintf(f,"%d",a);
+            fprintf(f,"%d",a);
         }
         }
     }
