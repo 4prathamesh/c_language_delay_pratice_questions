@@ -1,3 +1,4 @@
+// write a c program to find positive and negative number in array.
 #include<stdio.h>
 int main()
 {

@@ -1,3 +1,4 @@
+// WAP c program to find even odd number in array.
 #include<stdio.h>
 int main()
 {
