@@ -1,3 +1,6 @@
+// write a c program to find a perfect number in array.
+// perfect number mence is a positive number that is equale to the sum of
+// all divisor but excludes the number.
 #include<stdio.h>
 int main()
 {
