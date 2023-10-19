@@ -1,11 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,a[n];
-
+    int i,n;
     printf("enter array size:\n");
     scanf("%d",&n);
-
+    int a[n];
     printf("enter the array element :");
     for(i=0;i<n;i++)
     {

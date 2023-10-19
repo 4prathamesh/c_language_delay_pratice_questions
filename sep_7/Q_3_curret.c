@@ -17,9 +17,9 @@ int main()
 
     for(i=0;i<5;i++)
     {
-        for(j=a[i];j<(a[i+1])-1;j++)
+        for(j=a[i]+1;j<=(a[i+1])-1;j++)
         {
-            printf("%d",++j);
+            printf("%d ",j);
         }
     }
     return 0;

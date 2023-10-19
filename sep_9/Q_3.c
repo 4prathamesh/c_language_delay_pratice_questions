@@ -24,6 +24,9 @@ int main()
         {
             count++;
         }
+        else{
+            break;
+        }
         end--;
     }
 

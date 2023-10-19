@@ -14,27 +14,29 @@ int main()
         scanf("%d",&a[i]);
     }
 
-    printf("ascending  order : \n");
-    for(i=0;i<size;i++)
+    int max,sm;
+
+    max=a[0];
+    sm=a[1];
+    if(max<sm)
     {
-        for(int j=i+1;j<size;j++)
-        {
-            if(a[i]>a[j])
-            {
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
-            }
-        }
-        
-    }
-    for(i=0;i<size;i++)
-    {
-        printf("%d\n",a[i]);
+        max=a[1];
+        sm=a[0];
     }
 
-    temp=a[size-2];
-    printf("secound highest element in array: %d \n",temp);
+    for(i=0;i<size;i++)
+    {
+            if(a[i]>max)
+            {
+                sm=max;
+                max=a[i];
+            }
+            else if(a[i]<max && a[i]>sm)
+            {
+                sm=a[i];
+            }
+    }
+    printf("secound highest element in array: %d \n",sm);
 
     return 0;
 }
