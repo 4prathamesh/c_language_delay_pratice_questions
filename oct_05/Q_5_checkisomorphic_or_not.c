@@ -9,23 +9,27 @@ int checkisomorphic(char ch[],char ch1[])
     int i,j;
     if(len1==len2)
     {
-        printf(";;;\n");
         for(int i=0;i<len1;i++)
         {
             for(int j=i+1;j<len1;j++)
             {
-                printf("%d %d\n",i,j);
-                if(ch[i]==ch1[j])
+                if(ch[i]==ch[j])
                 {
-                    printf("%d%d\n",ch[i],ch[j]);
-                    break;
+                    if(ch1[i]==ch1[j])
+                    {
+                        if(i==len1-1)
+                        {
+                            return 1;
+                        }
+                        if(j==len2)
+                        {
+                            break;
+                        }
+                         
+                    }
                 }
             }
-            if(ch1[i]==ch1[j])
-            {
-                printf("%d%d\n",ch1[i],ch1[j]);
-                return 1;
-            }
+
         }
     }
     return 0;
