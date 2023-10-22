@@ -30,24 +30,26 @@ int main()
 #include<stdio.h>
 int main()
 {
-    int num,i=2,j=2,flag=0;
+    int num,i=2,j=2,flag=1;
     printf("enter the number is ");
     scanf("%d",&num);
 
-    while(i<num)
+    for(i=2;i<num;i++)
     {
         j=2;
-        while(j<=i){
+        flag=1;
+        while(j<i){
             if(i%j==0)
             {
-                flag=1;
-               // break;
+                flag=0;
+                break;
             }
             j++;
         }
-        
-        printf("%d ",i);
-        i++;
+        if(flag)
+        {
+            printf("%d ",i);
+        }
     }
     return 0;
 }
