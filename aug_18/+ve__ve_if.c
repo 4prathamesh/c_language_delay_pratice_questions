@@ -8,15 +8,11 @@ int main()
     printf("enter the value:");
     scanf("%d",&no);
 
-    if(no>=1)
+    if(no>0)
     {
         printf("the number is positive: %d",no);
     }
-   /* if(no<0)
-    {
-        printf("the number is negative: %d",no);
-    }*/
-    else 
+    if(no<0) 
     {
         printf("the number is negative: %d",no);
     }
