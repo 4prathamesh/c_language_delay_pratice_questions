@@ -232,10 +232,7 @@ void counAuth()
             }
             else if(temp3->next==temp1)
             {
-                if(strcmp(temp3->auth,temp1->auth)!=0)
-                {
-                    break;
-                }
+                break;
             }
             temp3=temp3->next;
 
