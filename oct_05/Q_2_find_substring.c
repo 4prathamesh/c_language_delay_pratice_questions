@@ -6,19 +6,20 @@
 int findsubstring(char ch[],char ch1[])
 {
     int p=0;
-    int size = strlen(ch1);
+    int size = strlen(ch1),j=0;
     for(int i=0;ch[i]!='\0';i++)
     {
-        for(int j=0;ch1[j]!='\0';j++)
+        if(ch[i]==ch1[j])
         {
-            if(ch[i]==ch1[j])
+            j++;
+            if(j>=size)
             {
-                p++;
+                return 1;
             }
         }
-        if(p==size)
+        else if(j>0)
         {
-            return 1;
+            j=0;
         }  
     }
    return -1;
